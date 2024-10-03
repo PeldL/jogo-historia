@@ -123,6 +123,37 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &563753513
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 563753514}
+  m_Layer: 0
+  m_Name: Foot
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &563753514
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 563753513}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.505, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2091760456}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &879088342
 GameObject:
   m_ObjectHideFlags: 0
@@ -830,8 +861,8 @@ GameObject:
   - component: {fileID: 2091760456}
   - component: {fileID: 2091760455}
   - component: {fileID: 2091760457}
-  - component: {fileID: 2091760458}
   - component: {fileID: 2091760459}
+  - component: {fileID: 2091760458}
   m_Layer: 0
   m_Name: Triangle
   m_TagString: Untagged
@@ -904,6 +935,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1618601325}
+  - {fileID: 563753514}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -963,10 +995,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 2091760454}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43ff12719369383409c37b79f83f8ead, type: 3}
+  m_Script: {fileID: 11500000, guid: e4cd7384212cbf345ae38a4048d38cfc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  OnPlayerKillEnemy:
+    m_PersistentCalls:
+      m_Calls: []
+  OnPause:
+    m_PersistentCalls:
+      m_Calls: []
+  OnUnPause:
+    m_PersistentCalls:
+      m_Calls: []
+  score: 0
+  life: 5
+  lifeMax: 0
+  foot: {fileID: 563753514}
+  speed: 5
+  jumpStrength: 3
+  body: {fileID: 2091760457}
 --- !u!1 &8267027094462252
 GameObject:
   m_ObjectHideFlags: 0
