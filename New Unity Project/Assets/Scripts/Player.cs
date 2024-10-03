@@ -5,14 +5,6 @@ using UnityEngine.Events;
 
 public class Player : MonoBehaviour
 {
-    public UnityEvent OnPlayerKillEnemy;
-    public UnityEvent OnPause;
-    public UnityEvent OnUnPause;
-
-    public int score;
-    public int life = 3;
-    public int lifeMax;
-    
     public Transform foot;
     bool groundCheck;
     public float speed = 5, jumpStrength = 5;
