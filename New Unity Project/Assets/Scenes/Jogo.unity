@@ -673,7 +673,7 @@ MonoBehaviour:
   attackRange: 0.43
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 3072
 --- !u!4 &351674196132401218
 Transform:
   m_ObjectHideFlags: 0
