@@ -2,12 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class PlayerAttack : MonoBehaviour
 {
     [SerializeField] private Animator anim;
     [SerializeField] private float meleeSpeed;
     [SerializeField] private float damage;
+    public Slider barraDeVidaDoJogador;
 
     public float life;
     float timeUntilMelee;
