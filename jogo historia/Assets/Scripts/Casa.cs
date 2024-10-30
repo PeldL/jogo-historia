@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Casa : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class Casa : MonoBehaviour
         if(life <= 0)
         {
             Destroy(gameObject);
+            SceneManager.LoadSceneAsync(2);
         }
     }
     
