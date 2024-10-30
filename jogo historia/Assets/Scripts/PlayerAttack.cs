@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerAttack : MonoBehaviour
 {
@@ -21,9 +22,19 @@ public class PlayerAttack : MonoBehaviour
            
             }
         }
+
+        if (life <= 0)
+        {
+            Destroy(gameObject);
+
+            SceneManager.LoadSceneAsync(2);
+
+        }
         else 
         {
             timeUntilMelee -= Time.deltaTime;
+
+
         }
     }
 
@@ -37,7 +48,8 @@ public class PlayerAttack : MonoBehaviour
     }
     public void Death()
     {
-        if(life <= 0)
+
+        if (life <= 0)
         {
             Destroy(gameObject);
         }
