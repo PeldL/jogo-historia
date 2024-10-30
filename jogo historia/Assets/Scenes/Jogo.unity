@@ -23040,8 +23040,8 @@ Tilemap:
   - first: {x: 21, y: -34, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 219
-      m_TileSpriteIndex: 171
+      m_TileIndex: 43
+      m_TileSpriteIndex: 176
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -26505,7 +26505,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: cf8a0feabbd31494bae284f1e9406c89, type: 2}
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: df58f95f106deba49af6761ad965b1b4, type: 2}
-  - m_RefCount: 2
+  - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: ea852afe9755eac4d9faeb7cd8b8831f, type: 2}
   - m_RefCount: 2
     m_Data: {fileID: 11400000, guid: 08a7892c9afa7704991a5c17175f6e3a, type: 2}
@@ -26857,7 +26857,7 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: 5bc89706b7cef504da5abc8ffa324eeb, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: a7d2d453cdaa0f44d9ba36343ef85ff4, type: 2}
-  - m_RefCount: 281
+  - m_RefCount: 280
     m_Data: {fileID: 11400000, guid: 8ad703de6ca0363409c5faca550236e1, type: 2}
   - m_RefCount: 1
     m_Data: {fileID: 11400000, guid: ffcd47d24efcc1d4693fb0ee97878cb6, type: 2}
@@ -27446,7 +27446,7 @@ Tilemap:
     m_Data: {fileID: -1949077775, guid: f92605f60800cab4db0f0d3c1685d62b, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: -1205171360, guid: f92605f60800cab4db0f0d3c1685d62b, type: 3}
-  - m_RefCount: 281
+  - m_RefCount: 280
     m_Data: {fileID: 584251220, guid: f92605f60800cab4db0f0d3c1685d62b, type: 3}
   - m_RefCount: 4
     m_Data: {fileID: 1093671634, guid: f92605f60800cab4db0f0d3c1685d62b, type: 3}
@@ -27456,7 +27456,7 @@ Tilemap:
     m_Data: {fileID: 1901143165, guid: f92605f60800cab4db0f0d3c1685d62b, type: 3}
   - m_RefCount: 2
     m_Data: {fileID: 1798659848, guid: f92605f60800cab4db0f0d3c1685d62b, type: 3}
-  - m_RefCount: 2
+  - m_RefCount: 3
     m_Data: {fileID: 970966294, guid: f92605f60800cab4db0f0d3c1685d62b, type: 3}
   - m_RefCount: 1
     m_Data: {fileID: 1521875984, guid: f92605f60800cab4db0f0d3c1685d62b, type: 3}
@@ -28810,7 +28810,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.051944733, y: 0.051944733}
+  m_Offset: {x: -0.4047451, y: 0.039432526}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -28821,7 +28821,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.1038895, y: 0.79914856}
+  m_Size: {x: 2.0172691, y: 0.824173}
   m_EdgeRadius: 0
 --- !u!224 &31234494221965404
 RectTransform:
