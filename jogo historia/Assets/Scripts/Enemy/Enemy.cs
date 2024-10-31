@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
@@ -9,13 +11,22 @@ public class Enemy : MonoBehaviour
     public void TakeDamage(float damage)
     {
         health -= damage;
+        EnemyManager enemy = FindObjectOfType<EnemyManager>();
 
         if (health <= 0f)
         {
-            Destroy(gameObject); 
-            Debug.Log("Enemy died");
+
+            Debug.Log("enemyKilled");
+            enemy.EnemyKilled();
+            Destroy(gameObject);
+            
+
         }
 
     }
     
+
+
+
+
 }

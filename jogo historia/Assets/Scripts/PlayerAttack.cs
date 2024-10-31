@@ -14,6 +14,14 @@ public class PlayerAttack : MonoBehaviour
     public float life;
     float timeUntilMelee;
 
+     void Start()
+    {
+        
+        barraDeVidaDoJogador.value = life;
+    }
+
+
+
     private void Update()
     {
         if (timeUntilMelee <= 0) 
@@ -44,8 +52,11 @@ public class PlayerAttack : MonoBehaviour
     {
         if(other.tag == "Enemy")
         {
+            barraDeVidaDoJogador.value = life;
+
             other.GetComponent<Enemy>().TakeDamage(damage);
             Debug.Log("Enemy hit");
+
         }
     }
     public void Death()
