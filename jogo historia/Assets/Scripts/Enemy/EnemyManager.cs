@@ -10,9 +10,9 @@ public class EnemyManager : MonoBehaviour
     {
         enemyKilled++;
 
-        if (enemyKilled >= 20)
+        if (enemyKilled >= 30)
         {
-            SceneManager.LoadSceneAsync(1);
+            SceneManager.LoadSceneAsync(4);
             Debug.Log(enemyKilled);
         }
     }

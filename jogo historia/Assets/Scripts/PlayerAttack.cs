@@ -37,7 +37,7 @@ public class PlayerAttack : MonoBehaviour
         {
             Destroy(gameObject);
 
-            SceneManager.LoadSceneAsync(2);
+            SceneManager.LoadSceneAsync(3);
 
         }
         else 
