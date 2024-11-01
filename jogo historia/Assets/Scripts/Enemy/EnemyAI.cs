@@ -4,7 +4,7 @@ using UnityEngine;
 public class EnemyAI : MonoBehaviour
 {
     public GameObject target; // O GameObject que o inimigo deve seguir
-    public float speed = 2f; // Velocidade do inimigo
+    public float speed = 4f; // Velocidade do inimigo
 
     void Update()
     {
